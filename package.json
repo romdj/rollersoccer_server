@@ -1,0 +1,22 @@
+{
+  "name": "rollersoccer_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "start-exp": "node --experimental-modules src/server.mjs",
+    "test": "mocha --recursive test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.468.0",
+    "aws-sdk-mock": "^4.4.0",
+    "serverless": "^1.44.1"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^18.3.1"
+  }
+}
