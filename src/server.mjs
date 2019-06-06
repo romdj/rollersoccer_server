@@ -1,7 +1,9 @@
 import Hapi from '@hapi/hapi';
-import { teams, getTeam } from './routes/team.mjs';
+
+import { getTeam, team } from './routes/team.mjs';
 
 const server = Hapi.server({ port: 2019 });
+
 server.route({
     method: 'GET',
     path: '/all',
@@ -10,7 +12,7 @@ server.route({
         handler: () => 'ok'
     }
 });
-server.route(teams);
+server.route(team);
 server.route(getTeam);
 
 const routeAll = server.match('get', '/all');
