@@ -17,6 +17,6 @@
     "serverless": "^1.44.1"
   },
   "dependencies": {
-    "@hapi/hapi": "^18.3.1"
+    "@hapi/hapi": "^18.4.1"
   }
 }
